@@ -1,0 +1,125 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.hide {
+  display: none;
+}
+
+:root {
+  --hue-incorrect: 0;
+  --hue-correct: 145;
+  --hue-normal: 200;
+}
+
+body {
+  /*--hue: var(--hue-normal);*/
+  background-image: url('welcomeimage.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(var(--hue), 100%, 20%);
+}
+
+
+.container {
+  width: 400px;
+  max-width: 70%;
+  background-color: transparent;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 0 10px 2px;
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color:rgb(138, 5, 5);
+  text-align: center;
+  position:absolute; left: 30px; 
+}
+
+.question{
+color:blueviolet;
+}
+
+.answer_button {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.btn {
+  --hue: var(--hue-normal);
+  border: 1px solid hsl(var(--hue), 100%, 30%);
+  background-color: hsl(var(--hue), 100%, 50%);
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  outline: none;
+}
+
+.btn:hover {
+  background-color: #c50e73;
+  -webkit-box-shadow: 10px 10px 99px 6px rgb(105, 37, 214);
+  -moz-box-shadow: 10px 10px 99px 6px rgb(105, 37, 214);
+  box-shadow: 10px 10px 99px 6px rgb(105, 37, 214);
+}
+
+
+
+.btn.correct {
+  --hue: var(--hue-correct);
+  color: black;
+  font-weight: bolder;
+  
+}
+
+.btn.incorrect {
+  --hue: var(--hue-incorrect);
+}
+
+.start-btn, .next-btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+#key_buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+.fact_button{
+  --hue: var(--hue-normal);
+  border: 1px solid hsl(var(--hue), 100%, 30%);
+  background-color: hsl(var(--hue), 100%, 50%);
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  outline: none;
+}
+
+ 
+.question.container{
+  font-weight: bolder;
+}
+
+
+  
+
+
+
+
+
+
+
